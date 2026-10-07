@@ -1,0 +1,18 @@
+{
+  "name": "dtmf-goertzel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline DTMF key recognition via Goertzel recurrence (API + CLI, SQLite)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "start": "npm run build && node dist/src/api.js",
+    "cli": "npm run build --silent && node dist/src/cli.js",
+    "demo": "npm run build --silent && node dist/src/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
