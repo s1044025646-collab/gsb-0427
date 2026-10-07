@@ -1,0 +1,22 @@
+{
+  "name": "dtmf-goertzel-backend",
+  "version": "1.0.0",
+  "description": "Offline DTMF (Goertzel) key recognition and per-frequency energy explanation backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/dtmf.test.js",
+    "start": "npm run build && node dist/src/api.js",
+    "cli": "npm run build && node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
